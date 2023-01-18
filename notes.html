@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Corbel;
+            }
+            .links {
+                display: flex;
+                gap: 30px;
+                margin-left: -10px;
+            }
+            .header {
+                background: rgb(202, 202, 4);
+                color: rebeccapurple;
+                display: flex;
+                justify-content: space-between;
+            }
+            .links {
+                margin-left: -20px;
+                gap: 30px;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+            a {
+                padding: 8px;
+                font-size: 18px;
+                text-decoration: none;
+                color: white;
+            }
+            .active {
+                background: white;
+                color: rgb(177, 177, 4);
+                border-radius: 8px;
+            }
+            a:hover {
+                background: white;
+                color: black;
+                border-radius: 8px;
+            }
+            .blue:hover {
+                color: royalblue;
+            }
+            .green:hover {
+                color: green;
+            }
+            .purple:hover {
+                color: purple;
+            }
+            .red:hover {
+                color: red;
+            }
+            @media only screen and (max-width: 400px) {
+                a {
+                    font-size: 10px;
+                }
+                .links {
+                    gap: 10px
+                }
+                .heading-container {
+                    font-size: 24px;
+                }
+            }
+            .post-header {
+                margin: 15px;
+            }
+            .heading {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            .heading-text {
+                margin-top: 5px;
+                font-size: 18px;
+            }
+            .card-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px
+            }
+            .card {
+                width: 400px;
+                height: auto;
+                background: rgb(202, 202, 4);
+                color: white;
+                border: 1px solid rgb(202, 202, 4);
+                border-radius: 10px;
+                padding: 20px;
+                gap: 20px;
+            }
+            .card-text {
+                font-family: Verdana;
+            }
+            .card-heading {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            #italic {
+                font-style: italic;
+                height: auto;
+            }
+            #cardlength {
+                line-height: 20px;
+            }
+            @media only screen and (max-width: 400px) {
+                .card {
+                    width: 300px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <ul class = "links">
+                <a class = "red" href = "index.html"><li>HOME</li></a>
+                <a class = "blue" href = "projects.html"><li>PROJECTS</li></a>
+                <a class = "green" href = "games.html"><li>GAMES</li></a>
+                <a class = "purple" href = "scripts.html"><li>SCRIPTS</li></a>
+                <a class = "active" href = "notes.html"><li>NOTES</li></a>
+            </ul>
+        </div>
+
+        <div class = "post-header">
+            <div class = "heading">NOTES</div>
+            <div class = "heading-text">
+                I made this page because i didn't really have anything else to put so i'll be uploading my own personal thoughts here instead. I'll probably update it every week with new stuff so if you want to check it out you can!
+            </div>
+        </div>
+
+        <div class = "card-container">
+            <div class = "card">
+                <div class = "card-heading">LYRICS TO THE BEST SONG OF ALL TIME</div>
+                <div class = "card-text" id="cardlength">
+                    We're no strangers to love
+You know the rules and so do I (do I)
+A full commitment's what I'm thinking of
+You wouldn't get this from any other guy
+I just wanna tell you how I'm feeling
+Gotta make you understand
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+We've known each other for so long
+Your heart's been aching, but you're too shy to say it (say it)
+Inside, we both know what's been going on (going on)
+We know the game and we're gonna play it
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+We've known each other for so long
+Your heart's been aching, but you're too shy to say it (to say it)
+Inside, we both know what's been going on (going on)
+We know the game and we're gonna play it
+I just wanna tell you how I'm feeling
+Gotta make you understand
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+                </div>
+            </div>
+
+            <div class = "card">
+                <div class = "card-heading">Christopher Nolan on Superman, Man Of Steel and Zack Snyder</div>
+                <div class = "card-text" id = "italic">
+                    SUPERMAN. SUPER MAN. A name, the very name, of heroism itself. Much imitated, never bettered, for the exact reason of the concept's absolutism-the most powerful heroic figure ever created. A modern myth, a modern Greek God, but one with no equals, no peers. A universe of Super Heroes grew up around him, but Superman lets these others believe themselves to be in his league only because he knows that no one quite forgets that he was created as a singular heroic figure-the absolute peak of perfection by which any other hero must be compared, and found wanting. Only Batman was allowed to gain a similar foothold in the popular imagination, because Batman was not a competing God, merely the best hero that mankind could throw in the Man of Steel's wake. Surely, then, Superman is the most obvious of all heroic figures to put on the big screen?
+
+Richard Donner cracked it for my generation with his seminal blockbuster Superman: The Movie, the title of which said everything about the promise of a match between icon and popular medium. But how to present Superman to a new generation of moviegoers? When David Goyer and I first traveled to the New York offices of DC Comics to tell them of our plans to re-envisage the Dark Knight, our pitch was warmly received by then-president Paul Levitz. He explained that Batman had thrived under continuing reinterpretation, however radical, then added: "Superman, of course, less so." His words came back many times as I tried to help David realize his dream of recrafting the Superman legend for today's audiences.
+
+Science Fiction were the words at the core of the pitch. Ground the tale by dealing head-on with the implications of an alien walking among us. This exciting idea needed a visual magician-a filmmaker who could throw the audience into a fully realized alien culture they could embrace within seconds. Zack Snyder had shown an extraordinary grasp of the technical complexities and heightened storytelling demanded by this genre in both 300 and Watchmen. We were thrilled when he agreed to take this on. Particularly thrilled because we could see how reluctant he was. He understood the responsibility and wanted to run away-but his love for the character won out.
+
+I believe that what Zack has done in Man of Steel will define Superman for our time, but there is little point in describing Zack's infectious enthusiasm in words when the incredible images in these pages get it across so magnificently. I've seen a lot of concept art in my time, but I've rarely seen such focused visual power. And I've rarely seen the promise of such imagery actually delivered onto the screen. But that's what Zack does.
+                </div>
+            </div>
+
+            <div class = "card">
+                <div class = "card-heading">COMICBOOKS I'VE READ</div>
+                <div class = "card-text">
+                    <p>𝗠𝘀. 𝗠𝗮𝗿𝘃𝗲𝗹 (2014) 𝗯𝘆 𝗚. 𝗪𝗶𝗹𝗹𝗼𝘄 𝗪𝗶𝗹𝘀𝗼𝗻 𝗮𝗻𝗱 𝗔𝗱𝗿𝗶𝗮𝗻 𝗔𝗹𝗽𝗵𝗼𝗻𝗮
+Vol. 1 - No Normal (2014): Really great! Love the story. Love the characters.
+Overral - 9/10</p>
+
+<p>𝗠𝗼𝗼𝗻 𝗞𝗻𝗶𝗴𝗵𝘁 (2016) 𝗯𝘆 𝗝𝗲𝗳𝗳 𝗟𝗶𝗺𝗶𝗿𝗲 𝗮𝗻𝗱 𝗚𝗿𝗲𝗴 𝗦𝗺𝗮𝗹𝗹𝘄𝗼𝗼𝗱
+• Moon Knight Vol. 1: Lunatic (2016) : Really amazing! Great art, great story.
+Overall - 9/10
+• Moon Knight Vol. 2: Reincarnations (2016)
+Overall - 9/10
+• Moon Knight Vol. 3: Birth And Death (2017)
+Overall -10/10
+</p>
+
+<p>
+𝗛𝗮𝘄𝗸𝗲𝘆𝗲 (2013) 𝗯𝘆 𝗠𝗮𝘁𝘁 𝗙𝗿𝗮𝗰𝘁𝗶𝗼𝗻
+• Hawkeye Vol. 1 My Life as a weapon (2013) : Great book, great art, great stories.
+Overall - 9/10
+• Hawkeye Vol. 2 Little Hits (2013) : A ton of improvements over the first volume and that's near perfect. Great humor and writing and obviously art!
+Overall - 9.5/10
+• Hawkeye Vol. 3 L.A. Woman (2013) : I really love Kate Bishop man. Like this volume is absolutely perfect bro. I really had a great time reading this!
+Overall - 10/10
+• Hawkeye Vol. 4 RIO BRAVO (2015) : Great story man! 
+Overall - 9/10
+</p>
+
+<p>
+𝗧𝗲𝗲𝗻 𝗧𝗶𝘁𝗮𝗻𝘀 - 𝗥𝗮𝘃𝗲𝗻 (2019) 𝗯𝘆 𝗞𝗮𝗺𝗶 𝗚𝗮𝗿𝗰𝗶𝗮 𝗮𝗻𝗱 𝗚𝗮𝗯𝗿𝗶𝗲𝗹 𝗣𝗶𝗰𝗼𝗹𝗼
+Overall - 8/10
+</p>
+
+<p>
+𝗧𝗲𝗲𝗻 𝗧𝗶𝘁𝗮𝗻𝘀 - 𝗕𝗲𝗮𝘀𝘁 𝗕𝗼𝘆 (2020) 𝗯𝘆 𝗞𝗮𝗺𝗶 𝗚𝗮𝗿𝗰𝗶𝗮 𝗮𝗻𝗱 𝗚𝗮𝗯𝗿𝗶𝗲𝗹 𝗣𝗶𝗰𝗼𝗹𝗼
+Overall - 8/10
+</p>
+
+<p>
+𝗕𝗮𝘁𝗺𝗮𝗻 𝗬𝗲𝗮𝗿 𝗢𝗻𝗲 (1988) 𝗯𝘆 𝗙𝗿𝗮𝗻𝗸 𝗠𝗶𝗹𝗹𝗲𝗿 𝗮𝗻𝗱 𝗗𝗮𝘃𝗶𝗱 𝗠𝗮𝘇𝘇𝘂𝗰𝗰𝗵𝗲𝗹𝗹𝗶
+Overall - 10/10
+</p>
+
+<p>
+𝗕𝗮𝘁𝗺𝗮𝗻 𝗘𝗴𝗼 𝗯𝘆 𝗗𝗮𝗿𝘄𝗶𝗻 𝗖𝗼𝗼𝗸𝗲
+Overall - 8.5/10
+</p>
+
+<p>
+𝗖𝗮𝘁𝘄𝗼𝗺𝗮𝗻: 𝗦𝗲𝗹𝗶𝗻𝗮'𝘀 𝗕𝗶𝗴 𝗦𝗰𝗼𝗿𝗲 (2003) 𝗯𝘆 𝗗𝗮𝗿𝘄𝗶𝗻 𝗖𝗼𝗼𝗸𝗲
+Overall - 7/10
+</p>
+
+<p>
+𝗗𝗮𝗿𝗲𝗱𝗲𝘃𝗶𝗹 𝗬𝗲𝗹𝗹𝗼𝘄 (2002) 𝗯𝘆 𝗝𝗲𝗽𝗵 𝗟𝗼𝗲𝗯 𝗮𝗻𝗱 𝗧𝗶𝗺 𝗕𝗮𝗹𝗲
+Overall - 9/10
+</P>
+
+<p>
+𝗗𝗮𝗿𝗲𝗱𝗲𝘃𝗶𝗹 𝗯𝘆 𝗠𝗮𝗿𝗸 𝗪𝗮𝗶𝗱 
+• Vol. 1 (2012) : Overall - 10/10
+</p>
+<p>
+𝗦𝗽𝗶𝗱𝗲𝗿-𝗠𝗮𝗻 𝗕𝗹𝘂𝗲 (2002) 𝗯𝘆 𝗝𝗲𝗽𝗵 𝗟𝗼𝗲𝗯 𝗮𝗻𝗱 𝗧𝗶𝗺 𝗦𝗮𝗹𝗲
+Overall - 10/10
+</p>
+
+<p>
+𝗠𝗼𝗼𝗻 𝗞𝗻𝗶𝗴𝗵𝘁 𝗯𝘆 𝗪𝗮𝗿𝗿𝗲𝗻 𝗘𝗹𝗹𝗶𝘀
+• Vol. 1 - From The Dead (2014) :  10/10
+• Vol. 2 - The Dead Shall Rise (2015) : 10/10
+• Vol. 3 - In The Night (2015) : 10/10
+</p>
+
+<p>
+𝗠𝗼𝗼𝗻 𝗞𝗻𝗶𝗴𝗵𝘁 (2021) 𝗯𝘆 𝗝𝗲𝗱 𝗠𝗮𝗰𝗞𝗮𝘆
+• Issue 1 - 9.5/10
+• Issue 2 - 9.5/10
+• Issue 3 - 9/10
+</p>
+
+<p>
+𝗨𝗹𝘁𝗶𝗺𝗮𝘁𝗲 𝗖𝗼𝗺𝗶𝗰𝘀 𝗦𝗽𝗶𝗱𝗲𝗿-𝗠𝗮𝗻 𝗯𝘆 𝗕𝗿𝗶𝗮𝗻 𝗠𝗶𝗰𝗵𝗮𝗲𝗹 𝗕𝗲𝗻𝗱𝗶𝘀 𝗮𝗻𝗱 𝗗𝗮𝘃𝗶𝗱 𝗟𝗮𝗳𝘂𝗲𝗻𝘁𝗲
+• Vol. 1 - The World According to Peter Parker (2010) : 10/10
+• Vol. 2 - Chameleons (2010) : 9.8/10
+</p>
+
+<P>
+𝗦𝗽𝗶𝗱𝗲𝗿-𝗠𝗮𝗻: 𝗟𝗶𝗳𝗲 𝗦𝘁𝗼𝗿𝘆 (2019) 𝗯𝘆 𝗖𝗵𝗶𝗽 𝗭𝗱𝗮𝗿𝘀𝗸𝘆 𝗮𝗻𝗱 𝗠𝗮𝗿𝗸 𝗕𝗮𝗴𝗹𝗲𝘆
+• Issue 1 - 8.5/10
+• Issue 2 - 7/10
+• Issue 3 - 6/10
+• Issue 4 - 5/10
+• Issue 5 - 4/10
+• Issue 6 - I didn't even finish reading this
+</P>
+
+<P>
+𝗗𝗮𝗿𝗲𝗱𝗲𝘃𝗶𝗹 (2019) 𝗯𝘆 𝗖𝗵𝗶𝗽 𝗭𝗱𝗮𝗿𝘀𝗸𝘆 𝗮𝗻𝗱 𝗠𝗮𝗿𝗸 𝗕𝗮𝗴𝗹𝗲𝘆
+• Vol. 1 - Know Fear (2019) : 9/10
+• Vol. 2 - No Devils, Only God (2019) : 8/10
+</P>
+
+<p>
+𝗗𝗮𝗿𝗲𝗱𝗲𝘃𝗶𝗹: 𝗣𝗮𝗿𝘁𝘀 𝗼𝗳 𝗮 𝗛𝗼𝗹𝗲 (2003)
+Overall - 10/10
+</p>
+
+<P>
+𝗧𝗲𝗲𝗻 𝗧𝗶𝘁𝗮𝗻𝘀 - 𝗕𝗲𝗮𝘀𝘁 𝗕𝗼𝘆 𝗟𝗼𝘃𝗲𝘀 𝗥𝗮𝘃𝗲𝗻 (2021) 𝗯𝘆 𝗞𝗮𝗺𝗶 𝗚𝗮𝗿𝗰𝗶𝗮 𝗮𝗻𝗱 𝗚𝗮𝗯𝗿𝗶𝗲𝗹 𝗣𝗶𝗰𝗼𝗹𝗼
+Overall - 9/10
+</P>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

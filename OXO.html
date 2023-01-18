@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            body {
+                font-family: Cursive;
+                font-size: 55px;
+                background: black;
+                color: white;
+            }
+            .row div {
+                border: 4px solid white;
+                padding: 50px;
+                height: 50px;
+                width: 50px;
+                text-align: center;
+                float: left;
+            }
+            .row {
+                clear: both;
+            }
+            .col1 {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .container {
+                float: left;
+            }
+            button {
+                padding: 10px 20px;
+                border-radius: 8px;
+                display: flex;
+            }
+            .reload {
+                background: black;
+                color: white;
+            }
+            @media only screen and (max-width: 400px) {
+                body {
+                    font-size: 35px;
+                }
+                .row div {
+                    height: 50px;
+                    width: 50px;
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "col1">
+        <button onclick = "document.body.style.backgroundColor = 'green';">Green</button>
+        <br>
+        <button onclick = "document.body.style.backgroundColor = 'red';">Red</button>
+        <br>
+        <button onclick = "document.body.style.backgroundColor = 'blue';">Blue</button>
+        <br>
+        <button onclick = "document.body.style.backgroundColor = 'black';">Black</button>
+        <br>
+        <button onclick = "document.body.style.backgroundColor = 'yellow';">Yellow</button>
+        <button class = "reload" onclick = "document.location.reload(true)">Click here to refresh game board</button>
+    </div>
+        <div class = "container">
+            <div class = "row">
+                <div id = "0_0" onclick = "place(this)"></div>
+                <div id = "1_0" onclick = "place(this)"></div>
+                <div id = "2_0" onclick = "place(this)"></div>
+            </div>
+            <div class = "row">
+                <div id = "0_1" onclick = "place(this)"></div>
+                <div id = "1_1" onclick = "place(this)"></div>
+                <div id = "2_1" onclick = "place(this)"></div>
+            </div>
+            <div class = "row">
+                <div id = "0_2" onclick = "place(this)"></div>
+                <div id = "1_2" onclick = "place(this)"></div>
+                <div id = "2_2" onclick = "place(this)"></div>
+            </div>
+        </div>
+        
+        <script>
+            var currentPlayer = "O";
+            var won = false;
+            function place(box) {
+                if(box.innerText != "" || won) return;
+                box.innerText = currentPlayer;
+                currentPlayer = currentPlayer == "O" ? "X" : "O";
+                checkGameBoard();
+            }
+            function checkGameBoard() {
+                for (var i = 0; i <= 2; i++) {
+                    checkWinner(document.getElementById(i + "_0").innerText,
+                    document.getElementById(i + "_1").innerText,
+                    document.getElementById(i + "_2").innerText);
+                    checkWinner(document.getElementById("0_" + i).innerText,
+                    document.getElementById("1_" + i).innerText,
+                    document.getElementById("2_" + i).innerText);
+                }
+                checkWinner(document.getElementById("0_0").innerText,
+                document.getElementById("1_1").innerText,
+                document.getElementById("2_2").innerText);
+                checkWinner(document.getElementById("2_0").innerText,
+                document.getElementById("1_1").innerText,
+                document.getElementById("0_2").innerText);
+            }
+            function checkWinner(first, second, third) {
+                if(first == "O" && first === second && first === third) {
+                    alert("Player O wins!");
+                    won = true;
+                }
+                    if(first == "X" && first === second && first === third) {
+                    alert("Player X wins!");
+                    won = true;
+                }
+            }
+        </script>
+    </body>
+</html>

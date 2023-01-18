@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects Page</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Corbel;
+            }
+            .links {
+                display: flex;
+                gap: 30px;
+                margin-left: -10px;
+            }
+            .header {
+                background: royalblue;
+                color: blue;
+                display: flex;
+                justify-content: space-between;
+            }
+            .links {
+                margin-left: -20px;
+                gap: 30px;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+            a {
+                padding: 8px;
+                font-size: 18px;
+                text-decoration: none;
+                color: white;
+            }
+            .active {
+                background: white;
+                color: blue;
+                border-radius: 8px;
+            }
+            a:hover {
+                background: white;
+                color: black;
+                border-radius: 8px;
+            }
+            .red:hover {
+                color: red;
+            }
+            .green:hover {
+                color: green;
+            }
+            .purple:hover {
+                color: purple;
+            }
+            .yellow:hover {
+                color: rgb(177, 177, 4);
+            }
+            @media only screen and (max-width: 400px) {
+                a {
+                    font-size: 10px;
+                }
+                .links {
+                    gap: 10px
+                }
+                .heading-container {
+                    font-size: 24px;
+                }
+            }
+            .projects-heading {
+                color: white;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+            .text {
+                color: royalblue;
+            }
+            .projects {
+                border: 1px solid rgb(161, 161, 161);
+                padding: 20px;
+                width: 300px;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 4px 6px 4px rgb(175, 174, 174);
+                background: black;
+            }
+            .projects:hover {
+                transform: scale(1.01);
+                transition: 0.4s;
+            }
+            .projects-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .heading {
+                font-size: 30px;
+                font-weight: 800;
+            }
+            .heading-text {
+                font-size: 20px;
+            }
+            .post-header {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .heading-text {
+                margin-bottom: 20px;
+            }
+            @media only screen and (max-width: 400px) {
+                .post-header {
+                    margin-right: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <ul class = "links">
+                <a class = "red" href = "index.html"><li>HOME</li></a>
+                <a class = "active" href = "projects.html"><li>PROJECTS</li></a>
+                <a class = "green" href = "games.html"><li>GAMES</li></a>
+                <a class = "purple" href = "scripts.html"><li>SCRIPTS</li></a>
+                <a class = "yellow" href = "notes.html"><li>NOTES</li></a>
+            </ul>
+        </div>
+
+        <div class = "post-header">
+        <div class = "heading">PROJECTS</div>
+        <div class = "heading-text">
+            In here there's a couple projects that I made using HTML & CSS. There's a bunch more but those are pretty much just tests and not full fledged websites or anything. If you click on the cards below, they'll take you to websites i've previously worked on and (sorta) finished.
+        </div>
+    </div>
+        <div class = "projects-container">
+            <a href = "https://lcarlxx.github.io/">
+                <div class = "projects">
+                    <div class = "projects-heading">
+                        MARVEL STUDIOS WEBSITE
+                    </div>
+                    <div class = "text">
+                        This was the first thing i made once i started to really dig deep into web-design (hence why it looks really bad!). I never got the chance to actually finish it though because i kinda lost interest in it because it took so long. Still pretty proud that i wrote all the code for this because there's a lot of words!
+                    </div>
+                </div>
+            </a>
+
+        <a href = "https://lcarlxx.github.io/TheStoneQuarry.github.io/">
+        <div class = "projects">
+            <div class = "projects-heading">
+                ZACK SNYDER WEBSITE
+            </div>
+            <div class = "text">
+                This is a website that i made out of my own sheer love for Zack Snyder films. It's much longer than the MCU website and took a little more time. It has his whole produced filmography and i used this as one of the tests of my web design skills. In retrospect it actually doesn't even look that good. Infact, I think it's pretty ugly. I like it though and it was a huge learning experience.
+            </div>
+        </div>
+    </a>
+</div>
+    </body>
+</html>

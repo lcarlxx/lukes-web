@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Corbel;
+                width: 100%;
+                margin: 0;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            .info-img {
+                width: 100px;
+                height: 100px;
+            }
+            .info-img2 {
+                width: 100px;
+                height: 100px;
+            }
+            .info-img3 {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .info-img4 {
+                width: 100px;
+                height: 100px;
+            }
+            .info-img5 {
+                width: 130px;
+                height: 100px;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+            .info {
+                border: 1px solid grey;
+                padding: 20px;
+                width: 200px;
+                height: 200px;
+                border-radius: 15px;
+                box-shadow: 4px 6px 4px grey;
+            }
+            .info:hover {
+                transform: scale(1.1);
+                transition: .4s;
+            }
+            .heading {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .text {
+                font-size: 12px;
+            }
+            @media only screen and (max-width: 400px) {
+                .container {
+                    flex-direction: column;
+                }
+            }
+            .heading-container {
+                font-size: 45px;
+                font-weight: 700;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .socials-container {
+                text-align: center;
+            }
+            .active {
+                color: black;
+            }
+            .text,.heading {
+                color: black;
+            }
+            .links {
+                display: flex;
+                gap: 30px;
+                margin-left: -10px;
+            }
+            .header {
+                background: tomato;
+                color: rebeccapurple;
+                display: flex;
+                justify-content: space-between;
+            }
+            .links {
+                margin-left: -20px;
+                gap: 30px;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+            a {
+                padding: 8px;
+                font-size: 18px;
+                text-decoration: none;
+                color: white;
+            }
+            .active {
+                background: white;
+                color: red;
+                border-radius: 8px;
+            }
+            a:hover {
+                background: white;
+                color: black;
+                border-radius: 8px;
+            }
+            .blue:hover {
+                color: royalblue;
+            }
+            .green:hover {
+                color: green;
+            }
+            .purple:hover {
+                color: purple;
+            }
+            .yellow:hover {
+                color: rgb(177, 177, 4);
+            }
+            @media only screen and (max-width: 400px) {
+                a {
+                    font-size: 10px;
+                }
+                .links {
+                    gap: 10px
+                }
+                .heading-container {
+                    font-size: 24px;
+                }
+            }
+            .about {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .about-heading {
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 10px
+            }
+            .about-text {
+                font-size: 20px;
+            }
+            .container {
+                margin-top: 30px;
+            }
+            .footer {
+      background: tomato;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+            .footer-text {
+                text-align: center;
+                margin-bottom: 20px;
+                color: white;
+            }
+    .button-email {
+      border-radius: 4px;
+      margin-top: 10px;
+      background: white;
+      color: tomato;
+      border: none;
+      padding: 4px 16px;
+    }
+            .button-email:hover {
+                background: rgb(217, 217, 217);
+            }
+            @media only screen and (max-width: 400px) {
+                .about {
+                    margin-right: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--This is my catharsis-->
+        <div class="header">
+            <ul class = "links">
+                <a class = "active" href = "index.html"><li>HOME</li></a>
+                <a class = "blue" href = "projects.html"><li>PROJECTS</li></a>
+                <a class = "green" href = "games.html"><li>GAMES</li></a>
+                <a class = "purple" href = "scripts.html"><li>SCRIPTS</li></a>
+                <a class = "yellow" href = "notes.html"><li>NOTES</li></a>
+            </ul>
+        </div>
+
+        <div class = "about">
+        <div class = "about-heading">
+            ABOUT
+        </div>
+        <div class = "about-text">
+            Hey, I'm Luke. This is a website I made to test my web design skills and to pretty much cure my boredom. The reason I made this website all about me is pretty much cuz I ran out of ideas. And the concept of having a website where I can upload all my coding projects, coded games, scripts and notes didn't sound half-bad. 
+            <p>Hobbies include watching films (check letterboxd down below), watching Tv shows, watching anime and playing video games. My favourite video games series is <i>The Legend of Zelda</i> and I can't explain why I love it so much. My socials are down below (apparently you can tell a lot about a person through their social media presence lol). Enjoy the website.</p>
+        </div>
+    </div>
+        <div class = "socials-container">
+        <div class = "container">
+        <a href="https://twitter.com/lcarlxx">
+            <div class = "info">
+                <img class = "info-img" src = "images/twitter.png"/>
+                <div class = "heading">Twitter</div>
+                <div class = "text">I use this one more often but I also try to use it barely to because it's pretty annoying and not as fun anymore but still mad addictive as well.</div>
+            </div>
+        </a>
+        <a href="https://letterboxd.com/LukeCarlX/">
+            <div class = "info">
+                <img class = "info-img2" src = "images/letterboxd.png"/>
+                <div class = "heading">Letterboxd</div>
+                <div class = "text">I always use Letterboxd. I'm always watching stuff. Watching stuff is my favourite hobby.</div>
+            </div>
+        </a>
+        <a href="https://myanimelist.net/profile/lcarlxx">
+            <div class = "info">
+                <img class = "info-img3" src = "images/mal.png"/>
+                <div class = "heading">MyAnimeList</div>
+                <div class = "text">I used to be more into anime during covid so most of my logs in MyAnimeList are from during that period. Been a while but i've been trying to get back into it again though.</div>
+            </div>
+        </a>
+        <a href="https://www.reddit.com/user/LukeCarlin10">
+            <div class = "info">
+                <img class = "info-img4" src = "images/reddit.png"/>
+                <div class = "heading">Reddit</div>
+                <div class = "text">Now Reddit is just like a go-to when everything gets boring. Fun as hell though.</div>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/_rebel_moon/">
+            <div class = "info">
+                <img class = "info-img5" src = "images/instagram.png"/>
+                <div class = "heading">Instagram</div>
+                <div class = "text">I barely use this apart from the occassional stories.</div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class = "footer">
+    <div class = "footer-text">
+      Copyright © 2023
+  </div>
+    <div class = "footer-email">
+<form class = "form-email" action="mailto:lcarlin925@gmail.com" method="GET">
+  <div>
+    <textarea placeholder="Write an email to me!" name="body" required></textarea>
+  </div>
+  <div>
+    <button class = "button-email" type="submit">Send email</button>
+  </div>
+</form>
+</div>
+</div>
+    </body>
+</html>

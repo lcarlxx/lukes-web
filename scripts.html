@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scripts Page</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Corbel;
+            }
+            .links {
+                display: flex;
+                gap: 30px;
+                margin-left: -10px;
+            }
+            .header {
+                background: rebeccapurple;
+                color: rebeccapurple;
+                display: flex;
+                justify-content: space-between;
+            }
+            .links {
+                margin-left: -20px;
+                gap: 30px;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+            a {
+                padding: 8px;
+                font-size: 18px;
+                text-decoration: none;
+                color: white;
+            }
+            .active {
+                background: white;
+                color: purple;
+                border-radius: 8px;
+            }
+            a:hover {
+                background: white;
+                color: black;
+                border-radius: 8px;
+            }
+            .blue:hover {
+                color: royalblue;
+            }
+            .green:hover {
+                color: green;
+            }
+            .red:hover {
+                color: red;
+            }
+            .yellow:hover {
+                color: rgb(177, 177, 4);
+            }
+            @media only screen and (max-width: 400px) {
+                a {
+                    font-size: 10px;
+                }
+                .links {
+                    gap: 10px
+                }
+                .heading-container {
+                    font-size: 24px;
+                }
+            }
+            .card-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            img {
+                width: 200px;
+                height: auto;
+            }
+            .script-description {
+                color: white;
+                margin-left: 15px;
+            }
+            .card {
+                width: 500px;
+                height: auto;
+                display: flex;
+                border: none;
+                padding: 10px;
+                background-color: rebeccapurple;
+                border-radius: 10px;
+                box-shadow: 2px 2px 12px rebeccapurple;
+            }
+            .script-heading {
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+            @media only screen and (max-width: 400px) {
+                .card {
+                    width: 300px
+                }
+            }
+            .post-header {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            .heading {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            .heading-text {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+            .heading-maybe {
+                margin-top: 10px;
+                font-weight: lighter;
+                font-style: italic;
+            }
+            @media only screen and (max-width: 400px) {
+                .heading-text {
+                    margin-right: 10px;
+                }
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <ul class = "links">
+                <a class = "red" href = "index.html"><li>HOME</li></a>
+                <a class = "blue" href = "projects.html"><li>PROJECTS</li></a>
+                <a class = "green" href = "games.html"><li>GAMES</li></a>
+                <a class = "active" href = "scripts.html"><li>SCRIPTS</li></a>
+                <a class = "yellow" href = "notes.html"><li>NOTES</li></a>
+            </ul>
+        </div>
+
+        <div class = "post-header">
+            <div class = "heading">SCRIPTS</div>
+            <div class = "heading-text">
+                During COVID, I feel like my love for movies and television got the best of me. To the point where i ended up learning stuff like how to format a movie script and "Dan Harmon's story circle", yada yada yada. Writing felt like a way to express my creativity through words because I've not always felt like i can say things easily. I've also never really felt that talented so this was also just a way to tell people "Hey! I can write a movie script!". Listening to podcasts featuring famous writers, they'll tell you that they see it as a medium of communication on a much deeper level. I'm not pretentious and i know the scripts i've tried to write are bad but every script gets better and better in my opinion and i feel like one day i'll make something really good and who knows, maybe even let it get made into a movie.
+                <div class = "heading-maybe">(the scripts are locked so you can't view them without the correct password)</div>
+            </div>
+        </div>
+
+        <div class = "card-container">
+
+            <a href="./scripts/pals.html">
+            <div class = "card">
+                <div class = "script-img">
+                    <img src = "./images/pals.png"/>
+                </div>
+                <div class = "script-description">
+                    <div class = "script-heading">PALS</div>
+                    PALS is inspired by highschool anime and highschool comedies such as Superbad (2007), Scott Pilgrim Vs. The World (2010) and Booksmart (2019). I've always been super fond of that genre and it sounded really cool to make a show akin to that. So, this script is just the first episode of that idea and i planned on writing more episodes but immediately lost interest after finishing this. It also takes a lot more inspiration from Superbad than people might think!
+
+The plot follows a highschool teenager who makes a bet with his best friend on either of them being able to get a date with someone and have them rate the date on a scale of 1 to 10 of which the one with the highest rating wins the bet. I know it sounds like a plot of a movie made in the 2000s and trust me that's intentional.
+                </div>
+            </div>
+        </a>
+
+        <a href="./scripts/20991.html">
+            <div class = "card">
+                <div class = "script-img">
+                    <img src = "./images/20991.png"/>
+                </div>
+                <div class = "script-description">
+                    <div class = "script-heading">2099: Episode 1</div>
+                    2099 was originally supposed to be an anthology series set in the year 2099 about people's daily lives before the new year hits and it's officially the 22nd century. This first episode is about bounty hunters and is heavily inspired by Guardians of The Galaxy (2014), Blade Runner 2049 (2017) and especially Cowboy Bebop (1998) which was what i was watching that gave me the initial motivation to actually write this. The following episodes of 2099 were supposed to focus on different characters but i fell in love with the hunters so much that i couldn't let them go,
+
+                    The plot follows a group of bounty hunters who meet up unexpectedly and bond over a heist their doing on the planet Venus.                </div>
+            </div>
+        </a>
+
+        <a href="./scripts/20992.html">
+            <div class = "card">
+                <div class = "script-img">
+                    <img src = "./images/20992.png"/>
+                </div>
+                <div class = "script-description">
+                    <div class = "script-heading">2099: Episode 2</div>
+                    2099 Episode 2 takes place shortly after Episode 1. I like this one way more and I feel like i fleshed out certain things that make the lore better. I wrote this 8 months after Episode 1 and i spent a lot of that time planning out the episodes up to Episode 8! The things that take place in the following episodes would've been so fun to write but unfortunately, I'm lazy.
+
+                    This episode follows the team going on a heist on earth! Which leads them to meet an unusual character who would become an important element in later episodes.                </div>
+            </div>
+        </a>
+
+        <a href="./scripts/giveIn.html">
+            <div class = "card">
+                <div class = "script-img">
+                    <img src = "./images/giveIn.png"/>
+                </div>
+                <div class = "script-description">
+                    <div class = "script-heading">Give In</div>
+                    GIVE IN is my magnum opus. This is a 25 minute short that i wrote in one day. Inspired by Love Death plus Robots and Jordan Peele's horror work. I'd just seen Nope (2022) and i was already LD+R-pilled so when a friend of mine gave me this idea i knew i had to write it. It is heavily inpired by Jordan Peele's 2017 horror classic; Get Out (hint: what's the opposite of Get? what's the opposite of Out?) and one of the only times i ever felt like real screenwriter. The plan was to turn this 25 minute script into a fleshed out 1 hour 30 minute movie and i have the ideas too! But until someone is paying me, I'm gonna hold off on that.                </div>
+            </div>
+        </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games Page</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Corbel;
+            }
+            .links {
+                display: flex;
+                gap: 30px;
+                margin-left: -10px;
+            }
+            .header {
+                background: limegreen;
+                color: rebeccapurple;
+                display: flex;
+                justify-content: space-between;
+            }
+            .links {
+                margin-left: -20px;
+                gap: 30px;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+            a {
+                padding: 8px;
+                font-size: 18px;
+                text-decoration: none;
+                color: white;
+            }
+            .active {
+                background: white;
+                color: green;
+                border-radius: 8px;
+            }
+            a:hover {
+                background: white;
+                color: black;
+                border-radius: 8px;
+            }
+            .blue:hover {
+                color: royalblue;
+            }
+            .red:hover {
+                color: red;
+            }
+            .purple:hover {
+                color: purple;
+            }
+            .yellow:hover {
+                color: rgb(177, 177, 4);
+            }
+            @media only screen and (max-width: 400px) {
+                a {
+                    font-size: 10px;
+                }
+                .links {
+                    gap: 10px
+                }
+                .heading-container {
+                    font-size: 24px;
+                }
+            }
+            .post-header {
+                margin: 20px
+            }
+            .heading {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            .heading-text {
+                font-size: 18px;
+                margin-top: 5px;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border: none;
+                border-radius: 20px;
+            }
+            .card-container {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            .card {
+                border: 1px solid limegreen;
+                padding: 20px;
+                background: limegreen;
+                color: white;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                width: 250px;
+                height: 250px;
+            }
+            .card-heading {
+                margin-top: 5px;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .card-text {
+                font-style: italic;
+                font-weight: 100;
+            }
+            .card:hover {
+                transform: scale(1.03);
+                transition: .3s;
+                box-shadow: 1px 1px 20px darkgreen;
+            }
+            .follow-up {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <ul class = "links">
+                <a class = "red" href = "index.html"><li>HOME</li></a>
+                <a class = "blue" href = "projects.html"><li>PROJECTS</li></a>
+                <a class = "active" href = "games.html"><li>GAMES</li></a>
+                <a class = "purple" href = "scripts.html"><li>SCRIPTS</li></a>
+                <a class = "yellow" href = "notes.html"><li>NOTES</li></a>
+            </ul>
+        </div>
+
+        <div class = "post-header">
+            <div class = "heading">GAMES</div>
+            <div class = "heading-text">
+                When i was younger (and even up to now), i was always so curious to know how things worked. I guess that was kinda the thing that separated me from the other kids. Guys at school were talking about The Dark Knight (2008) and I'd be the only person like "Hey did you know some guy named Christopher Nolan made that movie?". I watched stuff like Mythbusters and I was always up in encyclopedias trying to figure out how the thing does the thing. Some people say that curiosity is what made minds like Einstein so successful. I don't know about that. This great curiousity however led me to get interest in video games and how they were made. Was never really deep into video games until my early teenage years where i started idolising companies like Nintendo and Naughty Dog and how they made their games. I learned more about game engines and prgramming languages and thats pretty much the inspiration that has led me here today. That's why i'm making this freaking website. That's why i learned HTML & CSS and why i'm trying to learn even more languages. That's why I'm probably gonna do Computer Science at uni!
+                <div class = "follow-up">Here are a bunch of games that i made using HTML, CSS & JS. Yeah there's only one but i do plan on making way more. Only a matter of time.</div>
+            </div>
+        </div>
+
+        <div class = "card-container">
+            <a href = "OXO.html">
+            <div class = "card">
+                <div class = "card-img">
+                    <img src = "images/tictactoe.jpg"/>
+                </div>
+                <div class = "card-heading">TIC TAC TOE</div>
+                <div class = "card-text">It's more fun if you're playing with a friend!</div>
+            </div>
+        </a>
+        </div>
+    </body>
+</html>
